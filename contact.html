@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <style>
+            .but{
+            float:left;
+        }
+        
+        .but button{
+            width:170px;
+            height:60px;
+            margin-left:-10px;
+            background-color: gray;
+            border:1px solid black;
+            font-weight: bold;
+            color:white;
+            margin-top:-10px;
+        }
+    </style>
+    
+    </head>
+<body>
+    
+       <div style="height:70px;background-color:gray;margin-left:-20px;margin-top:-20px">
+        
+        <div style="padding-left:20px;padding-top:20px" class="but"> 
+   <a href="project.html">  <button>Home</button> </a>
+   <a href="login.html">  <button>Log in</button> </a>
+   <a href=""> <button>Sign up</button> </a>
+   <a href="contact.html">   <button>Contact us</button> </a>
+      <a href="">  <button>Home</button> </a>
+   <a href="login.html">  <button>Log in</button> </a>
+   <a href=""> <button>Sign up</button> </a>
+   <a href="">   <button>Contact us</button> </a>
+        </div>
+        
+    </div>
+    
+    <br> <br> <br>
+    
+    <img id="currentImage" src="images/1.jpg" style="display: block;margin:auto" onclick="displayImages()"
+         wiath="450px" height="250px">
+    
+    <script>
+    
+        function displayImages(){
+            
+            var images=["images/1.jpg","images/2.jfif","images/3.jpg","images/4.jpg"];
+            var x=document.getElementById("currentImage").getAttribute("src");
+            for(var i=0;i<=3;i++){
+                if(x==images[i]){
+                    var nextImage;
+                    if(i==3){
+                        nextImage=images[0];
+                    }
+                    else{
+                        nextImage=images[i+1];
+                    }
+                    document.getElementById("currentImage").setAttribute("src",nextImage);
+                }
+            }
+        }
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+</html>

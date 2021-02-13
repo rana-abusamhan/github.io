@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+    <script>
+    </script>
+    
+    <style>
+        .firstDiv img{
+            margin-left:140px;
+            border:2px solid gray   ;
+        }
+    
+        .secondDiv button{
+            margin-left:190px;
+            height: 30px;
+            background-color:  #ffb84d;
+            font-weight: bold;
+
+        }
+        .secondDiv button:hover{
+            background-color:red;
+        }
+        
+        .cart{
+            width:300px;
+            height:470px;
+            background-color: #ffe0cc;
+            margin-left: 1200px;
+            visibility:hidden;
+            border:2px solid black;
+            overflow: scroll;
+            margin-top:-345px;
+            
+        }
+        
+        .but{
+            float:left;
+        }
+        
+        .but button{
+            width:170px;
+            height:60px;
+            margin-left:-10px;
+            background-color: gray;
+            border:1px solid black;
+            font-weight: bold;
+            color:white;
+            margin-top:-10px;
+        }
+        
+        .footer img{
+            width:30px;
+        }
+        .footer span{
+            color:white;
+        }
+        .secondDiv img{
+            width:40px;
+        }
+     
+        .thirdDiv img{
+            width:370px;
+            height:550px;
+            opacity: 20%;
+        }
+        .thirdDiv img:hover{
+            opacity: 100%;
+        }
+    </style>
+    </head>
+    
+<body>
+    
+    
+    
+    
+    <div style="height:70px;background-color:gray;margin-left:-20px;margin-top:-20px">
+        
+        <div style="padding-left:20px;padding-top:20px" class="but"> 
+   <a href="project.html">  <button>Home</button> </a>
+   <a href="login.html">  <button>Log in</button> </a>
+   <a href="signup.html"> <button>Sign up</button> </a>
+   <a href="contact.html">   <button>Contact us</button> </a>
+      <a href="">  <button>Home</button> </a>
+   <a href="login.html">  <button>Log in</button> </a>
+   <a href=""> <button>Sign up</button> </a>
+   <a href="">   <button>Contact us</button> </a>
+        </div>
+        <img src="images\flat-design-shopping-cart-vector-13576287.jpg"
+        width="60" style="margin-left:120px;"  onclick="showCart()"  >
+        
+    </div>
+    
+    <script>
+    function showCart(){
+        document.getElementById("cart").style.visibility="visible";
+    }
+    </script>
+    
+    
+    <br>
+    <h1 style="text-align: center;"> Online Shopping</h1>
+    
+    
+    
+    
+    <img id="image1" src="images\Best-camera-bags-in-2018.jpg" width="800" height="300"
+        style="display:block;border-radius:20px;float:left;margin-left:350px;" >
+    <br><br><br><br><br>    <br><br><br><br><br>    <br><br><br><br><br> <br> <br> <br>
+    
+    <img src="images/left-arrow.png" width="20" style="margin-left:710px;" onclick="changeImage1()">
+    <img src="images/next.png" width="20" onclick="changeImage2()">
+    
+    <script>
+        function changeImage1(){
+            var x=document.getElementById("image1").setAttribute("src","images/3.jpg");
+        }
+        
+        function changeImage2(){
+            var x=document.getElementById("image1").setAttribute("src","images/1.jpg");
+        }
+    </script>
+    
+    
+    
+    
+    <div class="cart" id="cart">
+                <img class="image2" src="C:\Users\Waha - Studio A\Desktop\code\images\x-30465_640.webp" id="image2"
+             width="20px" style="margin-left:260px;" onclick="closeCart()">
+      
+        <h2 style="text-align: center"> Cart</h2>  <br> <br> <br> <br>
+        
+    </div>
+    
+    
+
+    
+    
+    
+    
+    <script>
+    function closeCart(){
+        document.getElementById("cart").style.visibility="hidden";
+    }
+    </script>
+    
+    
+    <br> <br><br>  <br> <br><br>  
+    
+    
+    <div class="firstDiv">
+    <img src="images\B0239G_AWBLPATN.jfif" width="200" height="200"> 
+    <img src="images\B1954G_9PGEPAKR.jfif" width="200" height="200">
+    <img src="images\images (1).jfif" width="200" height="200">
+    <img src="images\images (3).jfif" width="200" height="200">
+     </div>
+    
+    
+    
+    
+    
+    <div class="secondDiv"> 
+     <button>Show product</button>
+    <img src="images\white-plus-sign-red-circle-1579279.jpg">
+     <button>Show product</button>
+        <img src="images\white-plus-sign-red-circle-1579279.jpg">
+     <button>Show product</button>
+        <img src="images\white-plus-sign-red-circle-1579279.jpg">
+     <button>Show product</button>
+        <img src="images\white-plus-sign-red-circle-1579279.jpg">
+        </div>
+    
+    
+    <br> <br> <br><br> <br>
+    <div class="thirdDiv"> 
+    <img src="images\2d4486c7f5e3224d4273e0b40f887b15.jpg">
+    <img src="images\228aa10d4ba5c593be7012dc984522fc--prada-handbags-prada-bag.jpg">
+    <img src="images\4605389f0f6c3d1b5641260f30aa3234.jpg">
+    <img src="images\d3172aea43f7008f11b1343c749e93a6.jpg">
+    </div>
+   
+    <br> <br> <br> <br>
+    
+    
+     <img src="images\540b5be6ecd21dcd42fd722410300a22_720x.jpg"
+          style="width:1500px;display:block;margin:auto;">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <br> <br> <br>
+    
+    
+    <div class="footer" style="background-color: black;height:250px;margin-left:-8px;padding-left:60px;">
+    <br> <br> <br>
+        <img src="images\fb_icon_325x325.png">  
+        <span> Online shopping</span>
+        <br> <br>
+        <img src="images\ab6eff595bb1.png"> 
+        <span> Online shopping</span>
+        <br> <br>
+        <img src="images\-SGZioPb_400x400.jpg">
+        <span> Online shopping</span>
+        <br> <br>
+        
+        <address style="color:white; margin-left:1350px;margin-top:-150px"> Address : <br> Jordan - Amman </address>
+        <br> <br> <br> <br> <br> <br> <br>
+        <span> Email : example@yahoo.con</span>
+    </div>
+    
+    
+    
+    </body>
+    
+
+</html>

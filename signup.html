@@ -1,0 +1,87 @@
+<! DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        .firstDiv {
+            display: none;
+            background-color: white;
+            height:530px;
+            width:800px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 25px;
+        }
+        .firstDiv h1{
+            font-size:50px;
+            margin-left: 80px;
+        }
+        .firstDiv input{
+            margin-left: 10px;
+            margin-bottom:15px;
+            width:380;
+            height:50px;
+            border:none;
+            border-bottom: 1px solid black;
+            font-size:17px;
+        
+        }
+        .firstDiv button{
+
+            width:120px;
+            height: 45px;
+            margin-left: 85px;
+            background-color: #53c9ef;
+            border:none;
+            border-radius: 5px;
+            color:white;
+        }
+        .firstDiv form img{
+            width:17px;
+        }
+    </style>
+    
+    </head>
+<body style="background-color: #ede6d5;">
+
+    <button onclick="document.getElementById('test').style.display='block'" style="width:auto;">Signup</button>
+    
+    <div class="firstDiv" id="test"> <br> 
+    <img src="images/cancel.png" width="30" style="margin-left: 720px;"
+         onclick="document.getElementById('test').style.display='none'">
+        
+        <br> <br> 
+    <h1> Register</h1>
+    <form style="padding-left:100px;  ">
+    <img src="images/user.png">  
+    <input type="text" placeholder="Your Name" name="email" id="name" required>    <br>
+    <img src="images/email.png">
+    <input type="text" placeholder="Your Email" name="email" id="email" required> <br>
+    <img src="images/lock.png">
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <br>
+    <img src="images/padlock.png">
+    <input type="password" placeholder="Repeat Your Password" name="psw-repeat" id="psw-repeat" required> <br>
+    
+    <img src="images/age.png">
+   <input id="id1" type="number" min="100" max="300" placeholder="Age" required>
+
+    <button type="submit" class="registerbtn" onclick="myFunction()">Register</button>   
+        
+    </form>
+<img src="images/images.jpg" style="margin-top: -400px;margin-left: 540px;">
+    </div>
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("id1");
+  if (!x.checkValidity()) {
+    alert(x.validationMessage);
+  } else {
+   alert("Input OK");
+  } 
+} 
+</script>
+    
+    
+</body>
+</html>
